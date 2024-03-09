@@ -16,13 +16,16 @@
   <script type="text/babel">
     const root = document.querySelector('#root');
 
-    const element = React.createElement("h1", {id: "Titulo principal"}, "Hello World" );
+    // const element = React.createElement("h1", {id: "Titulo principal"}, "Hello World" );
 
-    const t2 = React.createElement("h4", {id: "Complementar"}, "Subtitulo" );
+    // const t2 = React.createElement("h4", {id: "Complementar"}, "Subtitulo" );
 
-    const headLine = React.createElement("div", null, element, t2);
+    // const headLine = React.createElement("div", null, element, t2);
 
-    ReactDOM.render(headLine, root);
+    ReactDOM.render(<div> 
+        <h1 id= "titulo principal">Hello World </h1>
+        <h2 id="titulo complementar">Subtitulo</h2>
+      </div>, root);
 
   </script>
 
